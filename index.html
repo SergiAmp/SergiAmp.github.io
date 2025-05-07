@@ -1,74 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi-corazón</title>
+  <meta charset="UTF-8">
+  <title>Para mi Tata</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-    body {
-        margin: 0;   
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #000000;
-    }
-
-    .hearth {
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        position: relative;
-        transform: rotate(45deg);
-        box-shadow: -20px 20px 150px #f20404;
-        animation: palpitar 0.5s linear infinite alternate;
-    }
-    .contenido {
-        position: fixed;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    h1 {
-        color: white;}
-    h2 {
-        color: white;
-    }
-
-@keyframes palpitar {
-    0%{transform: rotate(45deg) scale(1.10);}
-    80%{transform: rotate(45deg) scale(1.0);}
-    100%{transform: rotate(45deg) scale(0.8);}
-}
-
-    .hearth::before {
-        content: "";
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        right: 50%;
-        border-radius: 50%;
-        box-shadow: 20px 20px 150px #f20404;
-
-    }
-
-    .hearth::after {
-        content: "";
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        top: -50%;
-        border-radius: 50%;
-        box-shadow: 20px 20px 150px #f20404;
-        
-    }
-</style>
 <body>
-    <div class="hearth"></div>
-    <div class="contenido"><h1> Te amo  </h1><h2>Tata</h2></div>
+
+   
+
+<div class="valentines-day">
+  <div class="envelope"></div>
+  <div class="heart"></div>
+  <div class="text"> PARA: <br> Marta Vargas  </div>
+  <div class="front"></div>
+</div>
+
+<div id="card">
+  <div class="side one"></div>
+  <div class="side two">
+    <h2>Para mi amorcito</h2>
+    <p>Querida Marta... </p>
+    <p>Tienes los ojos más hermosos del mundo mi niña preciosaaa </p>
+    <p>Te quiero comer el coñito jaja, eres y siempre seras mi persona favorita</p>
+    <p>Me enamore de ti sin ver tu cuerpo y cuando me enseñaste partes de ti, me terminaste de enamorar mi amor <3 </p>
+    <p>Te ama tu BOMBONCITO DE CHOCOLATE</p>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
